@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/standard.css" type="text/css" rel="stylesheet" />
+<link href="css/airforceone.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<style type="text/css">
+body{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    background:url(images/body_bg.jpg) repeat-x #0099DD;
+}
+.zh-cn body{font-family: STHeiti,"Microsoft YaHei", "微软雅黑", "SimSun", "宋体",arial;}
+.zh-tw body{font-family: "Microsoft JhengHei","微軟正黑體",arial,helvetica,sans-serif;}
+#mainBody{
+    min-width: 1020px;
+    background: url('images/bg01.jpg') #E7F2F4 top center repeat-x;
+}
+.first #mainBody{background: url('images/bg01.jpg') #FFF top center repeat-x;}
+#page-container{}
+
+
+/* header */
+.login_BTN{background:url('images/btn_login.png') no-repeat;}
+.login-joinus a{background-image:url('images/btn_joinus.png');}
+/*footer*/
+.footer-ad{background:url('images/footer_img.png');}
+.news{background: url('images/newsbg.png') bottom center no-repeat;}
+</style>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/swf.js" ></script>
+<!--[if IE 6]>
+<style type="text/css">
+	html { overflow-x: hidden; }
+</style>
+<script type="text/javascript" src="js/iepng.js"></script>
+<script type="text/javascript">
+	EvPNG.fix('div, ul, img, li, input, a');
+</script>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.9a-min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        DD_belatedPNG.fix(".pngclass");
+    });
+	//修正ie6 bug
+	try {
+		document.execCommand("BackgroundImageCache", false, true);
+	} catch(err) {}
+</script>
+<![endif]-->
+<!-- revised -->
+<script type="text/javascript">
+//<![CDATA[
+
+    //Global variable for calculating page generation time
+    var PageInitTime = new Date();
+    var GameType = '';
+
+    //]]>
+</script>
+</head>
+<body>
+<div id="mainBody">
+    <div id="page-header">
+    <div id="header" class="clearfix">
+    <div class="header-logo floatL">
+        <div id="ele-logo-wrap">
+        <object width="210" height="110" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0">
+            <param value="images/logo.swf" name="movie" />
+            <param value="high" name="quality" />
+            <param name="wmode" value="transparent" />
+            <embed src="images/logo.swf" width="210" height="110" type="application/x-shockwave-flash" pluginspage="/www.macromedia.com/go/getflashplayer" quality="high" wmode="transparent">
+        </object>
+        </div>
+		<style>
+            #ele-logo-wrap{
+                width: 210px;
+                height: 110px;
+                display: block;
+                cursor: pointer;
+				overflow:hidden;
+            }
+        </style>
+	</div>
+        <div id="header-top" class="floatL">
+            <div id="top-link-wrap">
+                <ul class="top-link link-warp-sytle">
+                    <div class="estDIV"></div>
+                    <li>
+                        <a href="#" onclick="setfirst('http://www.5imoban.net');">设为首页</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="bookmarksite('http://www.5imoban.net', '世纪棋牌');">加入最爱</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="login-title-wrap" class="clearfix">
+                <!--login box-->
+                <div id="login-area" class="floatL isLogin-N"> 
+                    <form name="LoginForm" id="LoginForm" action="#" method="POST"  target="mem_index" onsubmit="return inputCheck();">
+                    <input type="hidden" name="uid2" value="guest" />
+                    <input type="hidden" name="SS" value="" />
+                    <input type="hidden" name="SR" value="" />
+                    <input type="hidden" name="TS" value="" />
+                    <div class="LoginInfo">
+                    <div class="LoginInfoL floatL clearfix">
+                    <div class="login_ip">
+                    <input name="username" type="text" id="username" class="login-input" value="用户名" onblur="if (this.value =='') this.value='用户名'" onfocus="this.value=''" onclick="if (this.value=='用户名') this.value=''" />
+                    </div>
+                    <div class="login_ip">
+                    <input name="passwd" type="password" id="passwd" class="login-input" value="mima" onblur="if (this.value =='') this.value='mima'" onfocus="this.value=''" onclick="if (this.value=='mima') this.value=''" />
+                    </div>
+                    <div class="login_ip rmNum_area">
+                    <input name="rmNum" type="text" id="rmNum" class="login-input" value="验证码" onblur="if (this.value =='') this.value='验证码'" onfocus="this.value=''" onclick="if (this.value=='验证码') this.value=''" />
+                    <img id='vPic' src="images/transparentNo.gif" width="40" height="18" />
+                    </div>
+                    <input name="Submit" type="submit" value="" class="btnLogin login_BTN pngclass" onmouseover="mover(this);" onmouseout="mout(this);"/>
+                    </div>
+                    <div class="login_BTN_div floatL clearfix">
+                    <div class="login-joinus floatL"><a href="#"></a></div>
+                    </div>
+                    </div>
+                    </form>
+                </div>
+</div>
+<style>
+.ele-lang-wrap{
+    line-height: 20px;
+    width:80px;
+    position: relative;
+    top: 1px;
+    z-index: 10;
+    text-align: left;
+    background: #FFFFFF;
+    border:1px solid #AEAEAD;
+    background: url('images/lang_arrow_down.jpg') right 1px no-repeat;
+}
+.ele-lang-title{
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    padding-right: 15px;
+    text-indent: 5px;
+    color: #000;
+}
+    /* use flag and select */
+    .ele-lang-title{
+        height: 32px;
+        margin-top: 5px;
+    }
+    .ele-lang-wrap,
+    .ele-lang-group{width: 54px;}
+</style>
+            <div id="main-Menual">
+                <ul class="topNav">
+                    <li class="current">
+                    <a href="/" class="this">首页</a></li>
+                    <li>
+                    <a href="download.html" >游戏下载</a></li>
+                    <li>
+                    <a href="yxjs_list.html">游戏介绍</a></li>
+                    <li><a href="zhuce.html">帐号注册</a></li>
+                    <li>
+                    <a href="guanli.html">用户管理</a></li>
+                    <li>
+                    <a href="news_list.html">新闻中心</a>
+                    </li>
+                    <li style="background:none;">
+                    <a href="contactus.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div id="page-container" class="clearfix">
+    <div class="first-wrap">
+        <div class="ad-flash">
+            <!-- 輪播 -->
+            <div class="anythingSlider">
+                 <div class="wrapper">
+                    <div class="loop_flash">   
+						<SCRIPT language=javascript1.1>
+                        (function($){
+                            var imag=[];
+                            var link=[];
+                            var text=[];
+							imag[0]=encodeURIComponent("images/11.jpg");
+	link[0]=encodeURIComponent("http://www.5imoban.net");
+	text[0]="";
+  	imag[1]=encodeURIComponent("images/22.jpg");
+	link[1]=encodeURIComponent("http://www.5imoban.net");
+	text[1]="";
+  	imag[2]=encodeURIComponent("images/33.jpg");
+	link[2]=encodeURIComponent("http://www.5imoban.net");
+	text[2]="";
+  	imag[3]=encodeURIComponent("images/44.jpg");
+	link[3]=encodeURIComponent("http://www.5imoban.net");
+	text[3]="";
+                            if(imag.length < 5){
+                                for(var i=imag.length;i<5;i++){
+                                    imag[i]="images/ad.jpg";
+                                    link[i]=encodeURIComponent("/");
+                                    text[i]="";
+                                }
+                            }
+                            var pic_width=1020;
+                            var pic_height=350;
+                            var stop_time=5000;
+                            makeSWF('FrontPageFocusShower','images/focus1.swf',{
+                                FlashVars : 'pics='+imag.join('|')+'&links='+link.join('|')+'&texts='+text.join('|')+'&stop_time='+stop_time+'',
+                                wmode: 'transparent',
+                                scale: 'noScale',
+                                quality: 'high',
+                                width : pic_width,
+                                height : pic_height
+                            });
+                        })($);
+                        </SCRIPT>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news pngclass">
+            <marquee id="msgNews" scrollamount="3" scrolldelay="80" direction="left" onmouseover="this.stop();" onmouseout="this.start();" onclick="HotNewsHistory();">欢迎光临世纪棋牌</marquee>
+        </div>
+        <div class="first-game-wrap">
+               <div class="rollwrap">
+               	<div id="box-01"></div>
+                <script>
+                (function(){
+                    var flashvars = {},
+                        params = {
+                            wmode: 'transparent',
+                            quality: 'high'
+                        },
+                        attributes = {
+                            onmousedown: "top.mem_index.location.href='#'"
+                        };
+                    swfobject.embedSWF('images/1.swf', 'box-01', '234', '289', '8.0.35.0', 'images/expressInstall.swf', flashvars, params, attributes);
+                })();
+                </script>
+                            </div>
+            <div class="rollwrap">
+                <div id="box-02"></div>
+                <script>
+                (function(){
+                    var flashvars = {},
+                        params = {
+                            wmode: 'transparent',
+                            quality: 'high'
+                        },
+                        attributes = {
+                            onmousedown: "javascript:f_com.getPager('-','MAdvertis','MemberExclusiveII');"
+                        };
+                    swfobject.embedSWF('images/2.swf', 'box-02', '234', '289', '8.0.35.0', 'images/expressInstall.swf', flashvars, params, attributes);
+                })();
+                </script>
+            </div>
+            <div class="rollwrap">
+                <div id="box-03"></div>
+                <script>
+                (function(){
+                    var flashvars = {},
+                        params = {
+                            wmode: 'transparent',
+                            quality: 'high'
+                        },
+                        attributes = {
+                            onmousedown: "top.mem_index.location.href='/cl/?module=System&method=MAdvertis&other=JoinAgent'"
+                        };
+                    swfobject.embedSWF('images/3.swf', 'box-03', '234', '289', '8.0.35.0', 'images/expressInstall.swf', flashvars, params, attributes);
+                })();
+                </script>
+            </div>
+            <div class="rollwrap">
+                <div id="box-04"></div>
+                <script>
+                (function(){
+                    var flashvars = {},
+                        params = {
+                            wmode: 'transparent',
+                            quality: 'high'
+                        },
+                        attributes = {
+                            onmousedown: "downloadvwin();"
+                        };
+                    swfobject.embedSWF('images/4.swf', 'box-04', '234', '289', '8.0.35.0', 'images/expressInstall.swf', flashvars, params, attributes);
+                })();
+                </script>
+            </div>
+        </div>
+    </div>
+</div>        <div id="page-footer" class="clearfix">
+    <div class="footer-ad-wrap">
+        <div class="footer-ad"><a id="bblogo" href="#" target="_blank"></a></div>
+    </div>
+        <div class="footer-context clearfix">
+        <ul>
+            <li>
+                <h4>注册</h4>
+                <p>开设一个账户即可享受世纪棋牌线上娱乐所有的精彩游戏更有机会获取高达20%的开户红利和1.3%无上限的返水。</p>
+            </li>
+            <li>
+                <h4>合作伙伴</h4>
+                <p>现在开始加入世纪棋牌的合作伙伴项目，坐享高达55%的佣金。</p>
+            </li>
+            <li>
+                <h4>博彩责任</h4>
+                <p>作为一个信誉好及富有强烈社会责任感的博彩公司，世纪棋牌致力将博彩游戏带来的负面影响降至最低。</p>
+            </li>
+            <li>
+                <h4>游客参观</h4>
+                <p>游戏平台全面开放，让您无需注册也可以一饱眼福。</p>
+            </li>
+        </ul>
+        <div class="footer-line"></div>
+        <ul>
+            <li>
+                <h4>真人娱乐</h4>
+                <p>真人娱乐有真人百家乐，骰宝，轮盘，温州牌九，龙虎，二八杠，德州扑克等游戏，通过高清视频与漂亮荷官"亲密接触"让您感受到身临其境的真实体验。</p>
+            </li>
+            <li>
+                <h4>Keno</h4>
+                <p>世纪棋牌娱乐城提供世界各地快乐彩及3D游戏，100%完全官方赛果，玩法新颖，3D最高赔率为700倍。</p>
+            </li>
+            <li>
+                <h4>电子游艺</h4>
+                <p>世纪棋牌电子游艺包含各类老虎机、电动扑克、大型电玩、桌上游戏。</p>
+            </li>
+        </ul>
+        <div class="footer-line"></div>
+        <ul>
+            <li>
+                <h4>帮助中心</h4>
+                <p>您可以通过常见问题栏目得到更多关于开户，存款，提款和游戏投注相关的咨询帮助。</p>
+            </li>
+            <li>
+                <h4>联系我们</h4>
+                <p>如果您有任何关于游戏或者是娱乐场方面的疑问，您随时可通过在线客服、QQ客服或者电话客服获取帮助。</p>
+            </li>
+        </ul>
+    </div>
+        <div id="footer" class="clearfix">
+        <!-- 廳主自改 -->
+        <div id="ArticleList" class="link-warp-sytle">
+            <a href="#">首页</a>&nbsp;|&nbsp;<a href="#">游戏下载</a>&nbsp;|&nbsp;<a href="#">游戏介绍</a>&nbsp;|&nbsp;<a href="#">帐号注册</a>
+            &nbsp;|&nbsp;<a href="#">用户管理</a>&nbsp;|&nbsp;<a href="#">新闻中心</a>&nbsp;|&nbsp;<a href="#" target="_blank">联系我们</a>
+                        <div id="FooterCopyright" class="link-warp-sytle">
+                <p>
+                    Copyright &copy; 世纪棋牌 Reserved &nbsp;&nbsp;24小时联系电话&nbsp;+63-99-8288-8888&nbsp;&nbsp;4006-931-368&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

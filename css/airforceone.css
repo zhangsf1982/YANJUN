@@ -1,0 +1,609 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.floatR{float: right;}
+.floatL{float: left;}
+.hover-pic {background-position: left top; background-repeat: no-repeat; }
+.hover-pic a {display: block; background-position: 0 0; background-repeat: no-repeat; cursor: pointer; }
+.clear{clear:both;}
+/* header-top */
+.header-logo{
+    padding-top: 12px;
+}
+#page-header { position: relative;}
+    #header{
+        margin: 0 auto;
+        width: 1020px;
+        height: 134px;
+    }
+#header-top{position: relative; width:810px !important; overflow:hidden;}
+#top-link-wrap{width: 810px;}
+.link-warp-sytle{color:#FFF;}
+    .link-warp-sytle li{display: inline;}
+    .link-warp-sytle a{
+        padding: 0 2px;
+        color:#ACACAC;
+        text-decoration:none;
+    }
+    .link-warp-sytle a:hover{color:#131313;}
+.top-link{
+    padding:6px 0;
+    color:#ACACAC;
+    text-align: right;
+}
+/* est time */
+.estDIV{
+    display: inline;
+    padding-right: 10px;
+}
+#est_bg.time_text{
+    position: relative;
+    display:inline;
+    height:20px;
+    background-color:transparent;
+    color: #313140;
+    line-height:20px;
+    /* W3C */   opacity:1;
+    /* IE5-7 */ *filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    /* IE 8 */  -MS-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* FX */    -moz-opacity:1;
+}
+/*lang*/
+.flag{
+    padding-top: 10px;
+}
+.flag .ele-lang-wrap{
+    line-height: 32px;
+    border: none;
+    background: url('../images/flagbg.jpg') no-repeat;
+}
+#ele-lang-group .ele-lang-group{
+    border-radius:0;
+    background-color: #FFFFFF;
+    border: 1px solid #AEAEAD;
+}
+/* 登入區 */
+#login-title-wrap{padding-left:20px;}
+    #login-area{}
+    #login-area.isLogin-Y{padding: 7px 0;}
+    .LoginInfo{
+        position: relative;
+        overflow:hidden;
+        _zoom:1;
+		margin-left:205px;
+    }
+    .LoginInfoL{padding: 13px 0;}
+    .LoginInfo .login_ip{
+        position:relative;
+        float: left;
+        _display: inline;
+    }
+    .rmNum_area{position: relative;}
+    .login-input{
+        margin-right: 6px;
+        padding: 6px 5px 5px 5px;
+        width: 111px;
+        height: 16px;
+        line-height: 16px;
+        border: none;
+        background: url('../images/loginbg.jpg') no-repeat;
+        color: #000;
+    }
+    .LoginInfo label{
+        position:absolute;
+        top:6px;
+        left:6px;
+        float:left;
+        color:#7E7E7E;
+        cursor:text;
+    }
+    #vPic{
+        position:absolute;
+        top: 5px;
+        right: 12px;
+        cursor: pointer;
+    }
+    .login_BTN{
+        display:block;
+        float: left;
+        width:69px;
+        height:27px;
+        border:none;
+        color: #FFF;
+        line-height: 27px;
+        cursor:pointer;
+    }
+    .login_BTN_div{}
+    .login_BTN_div a{
+        display:block;
+        float: left;
+        padding: 0 5px;
+        height: 53px;
+        line-height: 53px;
+        color:#00679D;
+        text-align:center;
+        text-decoration: none;
+        font-weight: bold;
+        _display: inline;
+    }
+    .login_BTN_div a:hover{color: #00F;}
+    .login-joinus a{
+        width: 97px;
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+    .login-joinus a:hover{background-position: left bottom;}
+/* 登入後 */
+#loginpic{padding-bottom: 4px; color: #000;}
+    #loginpic strong{color: #FE0000;}
+    .accName,
+    #loginpic p{
+        display: inline;
+        padding-left: 2px;
+        padding-right: 8px;
+    }
+/* 主選單 */
+#main-Menual{
+	width:790px;
+	height:40px;
+	overflow:hidden;
+	_position:relative;
+}
+.topNav{margin-left:100px;}
+.topNav li{
+	float:left;
+	padding-right:10px;
+	width:88px;
+	height:40px;
+	background:url(../images/nav_line.png) no-repeat right center;
+}
+.topNav a{
+	display:block;
+	text-align:center;
+	line-height:40px;
+	color:#fff;
+	text-decoration:none;
+	width:88px;
+	height:40px;
+	background:url(../images/nav_bg.png);
+}
+.topNav li a:hover,.topNav li.current a{background-image:url(../images/nav_hover_bg.png);}
+/* 登入選單 */
+#SU-Menual{float: right;}
+    .login-Menual{
+        padding: 0;
+        line-height: 20px;
+        color: #5F5E5E;
+    }
+    #SU-Menual li{display:inline;}
+    #SU-Menual a{color:#5F5E5E;}
+    #SU-Menual a:hover{color:#C00;}
+/* 首頁 */
+.first-wrap{
+    margin: 0 auto;
+    width: 1020px;
+}
+.ad-flash{position: relative;}
+        /*JS輪播圖*/
+.anythingSlider{
+	position:relative;
+	width: 1020px;
+	height:355px;
+	padding-top:5px;
+}
+        .anythingSlider .wrapper{
+            width: 1020px;
+            height:350px;
+            overflow: hidden;
+        }
+        .anythingSlider .wrapper div.loop_flash{
+            width: 9999px;
+			height:350px;
+            overflow: hidden;
+        }
+        #thumbNav{
+            position: relative;
+            bottom: 26px;
+            text-align: center;
+            z-index: 1;
+        }
+            #thumbNav a{
+                overflow: hidden;
+                display:inline-block;
+                *zoom: 1;
+                *display:inline;
+                width:20px;
+                height:20px;
+                line-height:20px;
+                color:#FFF;
+                font-weight: bold;
+                text-align:center;
+                text-decoration:none;
+                text-indent: -100px;
+                background:url('../images/arrow.png') center center no-repeat;
+            }
+            #thumbNav a.cur, #thumbNav a.cur:hover{
+                background:url('../images/arrow.png') 5px center no-repeat;
+            }
+        /*JS輪播圖_END*/
+/* 最新消息 */
+.news{
+    display: block;
+    overflow: hidden;
+    padding: 0px 20px 0 130px;
+    width: 870px;
+    height: 41px;
+    line-height: 42px;
+    _display: inline;
+}
+    .news marquee{
+        height: 41px;
+        color:#2E2E2E;
+        cursor:pointer;
+    }
+.first-game-wrap{
+    width: 1020px;
+    height: 308px;
+}
+    .rollwrap {
+        float: left;
+        padding: 7px 10px;
+    }
+/*container*/
+.first #page-container{
+    background: url('../images/container_top.jpg') center top no-repeat;
+}
+/*banner-wrap title*/
+.banner-wrap{
+    background: url('../images/container_bg.jpg') center top no-repeat;
+}
+    .banner-title{
+        margin: 0 auto;
+        width: 990px;
+        height: 87px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+/* 頁首 end */
+/* 頁尾 */
+#page-footer{}
+.footer-ad,
+.footer-context,
+#ArticleList{
+    margin: 0 auto;
+    width: 1020px;
+}
+    .footer-ad-wrap{background-color: #000;}
+    .first .footer-ad-wrap{background: none;}
+        .footer-ad{
+            position: relative;
+            height: 42px;
+        }
+    .footer-context{padding: 18px 15px 0 15px;}
+        .footer-context ul{
+            float: left;
+            width: 296px;
+            padding: 0 12px;
+        }
+        .footer-context ul li{padding: 10px 0}
+        .footer-context h4{color: #0083B1;}
+        .footer-context p{
+            line-height: 22px;
+            color: #757575;
+        }
+            .footer-line{
+                float: left;
+                width: 15px;
+                height: 368px;
+                background:url('../images/c_line.png') no-repeat;
+            }
+    #footer{
+        padding-top: 20px;
+        background-color: #0099DD;
+    }
+        #ArticleList {text-align: center;}
+        #ArticleList a{color: #FFF;}
+        #ArticleList a:hover{color: #FF0;}
+        #FooterCopyright{
+            padding: 25px 0;
+            line-height: 20px;
+        }
+    #bblogo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display:block;
+        width:82px;
+        height:42px;
+    }
+/* 頁尾 end */
+/* 真人導引列 */
+#liveGameLine{
+    padding: 5px 25px;
+}
+    #liveGameLine a{
+        float: right;
+        padding: 2px 8px;
+        color: #FFF;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #1791d2;
+        background-color: #005d8e;
+    }
+    #liveGameLine a:hover{color:#FF3;}
+/* 真人娛樂 電子遊藝 彩票 */
+#page-body{
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 1020px;
+}
+    #page-body .liveTop{
+        margin:0 auto;
+        padding: 10px 0px;
+        width:934px;
+    }
+    .content-area, .content-lottery-area{
+        margin: 0 auto;
+        width: 1005px;
+        _zoom:1;
+    }
+    .content-lottery-area{ }
+    .content-area.hided{
+        display:none;
+    }
+#prizeDIV{
+    height: 61px;
+    margin-left: 30px;
+    width: 184px;
+    background: url('../images/prizeBG.jpg') no-repeat left top;
+    padding-top: 30px;
+    clear: both;
+}
+#jackpotRules{
+    margin-left: 40px;
+}
+#jackpotRules a{
+    text-decoration:none;
+    display:block;
+    width:166px;
+    height:31px;
+    color:#FDE9CE;
+    font-size:1.2em;
+    font-weight:bold;
+    text-transform:capitalize;
+    background:left top no-repeat;
+}
+#jackpotRules a.jpbtn-zh-tw{
+    background-image:url('../images/PrizeRule_tw.jpg');
+}
+#jackpotRules a.jpbtn-zh-cn{
+    background-image:url('../images/PrizeRule_cn.jpg');
+}
+#jackpotRules a.jpbtn-en{
+    background-image:url('../images/PrizeRule_en.jpg');
+}
+#jackpotRules a:hover{
+    color:#F66;
+    background-position:left bottom;
+}
+/*遊戲介紹*/
+.GameIcon {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    display: block;
+    cursor: pointer;
+}
+.GameIcon-First {
+    width: 72px;
+    height: 29px;
+}
+.GameIcon-New {
+    width: 36px;
+    height: 37px;
+    background: url('../images/New.gif') 0 0 no-repeat;
+}
+/*遊戲清單*/
+.Game_layout{
+    position:relative;
+    float:left;
+    margin: 8px;
+    width:319px;
+    height:183px;
+    background:url('../images/gamebg01.png')  left top no-repeat;
+    _display:inline;
+}
+    .game-img{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+    .game-img a{display: block;}
+    .game-info{
+        position: relative;
+        padding: 16px 0 0 10px;
+        width: 130px;
+    }
+        .game-name{
+            padding-left: 18px;
+            color: #000;
+            text-align: left;
+            font-size: 14px;
+        }
+        .en .game-name{font-size: 12px; font-weight: normal;}
+        .game-link{padding-top: 56px;}
+        .game-link a{
+            display: block;
+            padding: 0 16px 0 10px;
+            width: 70px;
+            height: 34px;
+            line-height: 34px;
+            color: #007BBB;
+            text-decoration: none;
+            text-align: center;
+            background:url('../images/game_rule.png')  left top no-repeat;
+        }
+        .game-link a:hover{color:#000;}
+    .boxcaption_lottery{
+        z-index:9;
+        float:left;
+        margin: 20px 0 0 10px;
+        padding:3px 10px;
+        width: 278px;
+        height:55px;
+        border: 1px solid #FFF;
+        border-radius: 2px;
+        background: #FFF;
+        box-shadow: 1px 1px 3px #888;
+        color:#555;
+        line-height:18px;
+        /* W3C */   opacity:1;
+        /* IE 57 */ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        /* IE 8 */  -MS-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        /* FX */    -moz-opacity:1;
+        _display: inline;
+    }
+    .lottery-no,.lottery-num{
+        color:#B20000;
+    }
+/* 文案區塊 */
+#page-left{
+    float:left;
+    padding-left: 16px;
+    width:268px;
+    _display:inline;
+}
+#page-right{
+	overflow:hidden;
+    position: relative;
+    bottom: 30px;
+    float:left;
+    padding: 0 40px;
+    width:650px;
+    _display: inline;
+	color:#222425;
+}
+#page-right p,#page-right div{width:650px; overflow:hidden; _position:relative; color:#222425;}
+#page-right a{color:#page-right;}
+/*遊戲介紹*/
+.gameMenuHeader{}
+    .gameMenuBody{}
+    .Game-Menual{}
+    .gameMenuFooter{height: 66px; background-image:url('../images/sidebar_bottom.png');}
+	.Game-Menual li{height:34px; margin:0 auto;}
+    .Game-Menual a{
+        display:block;
+        height:34px;
+        line-height:34px;
+        color:#004E73;
+        text-align:center;
+        text-decoration:none;
+        background:url('../images/sidebar.png') center center no-repeat;
+    }
+    .Game-Menual a:hover{
+        color: #F60;
+    }
+.game-menu-btn,
+.game-menu-btn span{
+    display: block;
+    width: 268px;
+    height: 51px;
+}
+.btn-download,
+.btn-download span{
+    height: 55px;
+}
+.btn-event,
+.btn-event span{
+    height: 52px;
+}
+/*文案*/
+#direction{color:#222425;}
+#PT-switcher-wrap{padding-left: 40px;}
+#direction ul.mtab-menual li{
+    margin-right:10px;
+    line-height:20px;
+    height:20px;
+    padding:5px;
+    display:inline;
+    cursor:pointer;
+    font-family:'PMingLiU';
+    color: #004E73;
+    border-bottom: 2px solid #004E73;
+}
+#direction ul.mtab-menual li.mtab{
+    color:#F60;
+    border-bottom: 2px solid #F60;
+}
+#direction ul.mtab-menual li:hover{
+    color:#F60;
+    border-bottom: 2px solid #F60;
+}
+#direction a{
+    color:#004E73;
+    text-decoration: none;
+}
+#direction a:hover{
+    color:#F60;
+}
+/*優惠活動*/
+#direction.exclusive-event{
+    width: auto;
+    padding: 0;
+}
+/*共用頁面*/
+.Tpl-table01{
+    background-color:#FFFFFF;
+    border:1px solid #CCC;
+    color:#000;
+    font-size:12px;
+}
+table .Tpl-title01 th{
+    height:24px;
+    text-align:center;
+    font-weight:bold;
+    color:#FFF;
+    /* fallback */  background-color:#3E9FC8;
+    /* Webkit */    background:-webkit-linear-gradient(top, #73B9D7 0%, #3E9FC8 100%);
+    /* Firefox */   background:-moz-linear-gradient(top, #73B9D7 0%, #3E9FC8 100%);
+    /* IE10+ */     background:-ms-linear-gradient(top, #73B9D7 0%, #3E9FC8 100%);
+    /* Opera */     background: -o-linear-gradient(top, #73B9D7 0%, #3E9FC8 100%);
+    /* W3C */       background:    linear-gradient(top, #73B9D7 0%, #3E9FC8 100%);
+    /* IE6-9 */     *filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#73B9D7', endColorstr='#3E9FC8',GradientType=0 );
+}
+#Tpl-user-acc span{
+    line-height:20px;
+    color:#0000FF;
+}
+.Tpl-table01 th, .Tpl-table01 td{
+    height:22px;
+    border:1px solid #CCC;
+}
+tr.Tpl-trcolor1{
+    background:#FFFFFF;
+    /* IE10 */
+    background:-ms-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Firefox */
+    background:-moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Opera */
+    background:-o-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Webkit */
+    background:-webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* W3C */
+    background:linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+}
+tr.Tpl-trcolor2{
+    background:#EEEEEE;
+}
+tr.Tpl-trmouseenter{
+    background:#DEF;
+}
+#Tpl-memdata .Tpl-table01 th, #Tpl-memdata .Tpl-table01 td.Tpl-left{
+    text-align:center;
+}
+#Tpl-memdata .Tpl-table01 td.Tpl-right{
+    text-align:left;
+}
+.Tpl-blue{
+    color:#0000FF;
+}

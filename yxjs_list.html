@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>游戏介绍列表页</title>
+<link href="css/standard.css" type="text/css" rel="stylesheet" />
+<link href="css/airforceone.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<style type="text/css">
+body{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    background:url(images/body_bg.jpg) repeat-x #0099DD;
+}
+.zh-cn body{font-family: STHeiti,"Microsoft YaHei", "微软雅黑", "SimSun", "宋体",arial;}
+.zh-tw body{font-family: "Microsoft JhengHei","微軟正黑體",arial,helvetica,sans-serif;}
+#mainBody{
+    min-width: 1020px;
+    background: url('images/bg01.jpg') #E7F2F4 top center repeat-x;
+}
+.first #mainBody{background: url('images/bg01.jpg') #FFF top center repeat-x;}
+#page-container{background: url('images/container_bg.jpg') center -100px no-repeat;}
+
+/* header */
+.login_BTN{background:url('images/btn_login.png') no-repeat;}
+.login-joinus a{background-image:url('images/btn_joinus.png');}
+/*footer*/
+.footer-ad{background-image:url('images/footer_img.png');}
+/* banner-title */
+.banner-title{background-image:url('images/title_madvertis.png');}
+.MemberExclusiveII .banner-title{background-image:url('images/title_memberexclusiveii.png');}
+.ltlottery .banner-title{background-image:url('images/title_lottery.png');}
+.ttlivetop .banner-title,
+.ttlive .banner-title,
+.lblive .banner-title,
+.yslive .banner-title {
+    background-image:url('images/title_live.png');
+}
+.btn-download,
+.btn-download span{background-image: url('images/btn_download.png');}
+.btn-service,
+.btn-service span{background-image: url('images/btn_service.png');}
+.btn-event,
+.btn-event span{background-image: url('images/btn_events.png');}
+/* GameIcon */
+.GameIcon-First {background: url('images/First_zh-cn.png') left top no-repeat;}
+</style>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/swf.js" ></script>
+<!--[if IE 6]>
+<style type="text/css">
+	html { overflow-x: hidden; }
+</style>
+<script type="text/javascript" src="js/iepng.js"></script>
+<script type="text/javascript">
+	EvPNG.fix('div, ul, img, li, input, a');
+</script>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.9a-min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        DD_belatedPNG.fix(".pngclass");
+    });
+	//修正ie6 bug
+	try {
+		document.execCommand("BackgroundImageCache", false, true);
+	} catch(err) {}
+</script>
+<![endif]-->
+<!-- revised -->
+<script type="text/javascript">
+//<![CDATA[
+
+    //Global variable for calculating page generation time
+    var PageInitTime = new Date();
+    var GameType = '';
+
+    //]]>
+</script>
+</head>
+<body>
+<div id="mainBody">
+    <div id="page-header">
+    <div class="clearfix" id="header">
+    <div class="header-logo floatL">
+        <div id="ele-logo-wrap">
+        <object width="210" height="110" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0">
+            <param value="images/logo.swf" name="movie" />
+            <param value="high" name="quality" />
+            <param name="wmode" value="transparent" />
+            <embed src="images/logo.swf" width="210" height="110" type="application/x-shockwave-flash" pluginspage="/www.macromedia.com/go/getflashplayer" quality="high" wmode="transparent">
+        </object>
+        </div>
+		<style>
+            #ele-logo-wrap{
+                width: 210px;
+                height: 110px;
+                display: block;
+                cursor: pointer;
+				overflow:hidden;
+            }
+        </style>
+	</div>
+        <div class="floatL" id="header-top">
+            <div id="top-link-wrap">
+                <ul class="top-link link-warp-sytle">
+                    <div class="estDIV"></div>
+                    <li>
+                        <a onClick="setfirst('http://www.5imoban.net');" href="###">设为首页</a>
+                    </li>
+                    <li>
+                        <a onClick="bookmarksite('http://www.5imoban.net', '世纪棋牌');" href="###">加入最爱</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix" id="login-title-wrap">
+                <!--login box-->
+                <div class="floatL isLogin-N" id="login-area"> 
+                    <form name="LoginForm" id="LoginForm" action="#" method="POST"  target="mem_index" onsubmit="return inputCheck();">
+                    <input type="hidden" name="uid2" value="guest" />
+                    <input type="hidden" name="SS" value="" />
+                    <input type="hidden" name="SR" value="" />
+                    <input type="hidden" name="TS" value="" />
+                    <div class="LoginInfo">
+                    <div class="LoginInfoL floatL clearfix">
+                    <div class="login_ip">
+                    <input name="username" type="text" id="username" class="login-input" value="用户名" onblur="if (this.value =='') this.value='用户名'" onfocus="this.value=''" onclick="if (this.value=='用户名') this.value=''" />
+                    </div>
+                    <div class="login_ip">
+                    <input name="passwd" type="password" id="passwd" class="login-input" value="mima" onblur="if (this.value =='') this.value='mima'" onfocus="this.value=''" onclick="if (this.value=='mima') this.value=''" />
+                    </div>
+                    <div class="login_ip rmNum_area">
+                    <input name="rmNum" type="text" id="rmNum" class="login-input" value="验证码" onblur="if (this.value =='') this.value='验证码'" onfocus="this.value=''" onclick="if (this.value=='验证码') this.value=''" />
+                    <img id='vPic' src="images/transparentNo.gif" width="40" height="18" />
+                    </div>
+                    <input name="Submit" type="submit" value="" class="btnLogin login_BTN pngclass" onmouseover="mover(this);" onmouseout="mout(this);"/>
+                    </div>
+                    <div class="login_BTN_div floatL clearfix">
+                    <div class="login-joinus floatL"><a href="#"></a></div>
+                    </div>
+                    </div>
+                    </form>
+                </div>
+
+</div>
+<style>
+.ele-lang-wrap{
+    line-height: 20px;
+    width:80px;
+    position: relative;
+    top: 1px;
+    z-index: 10;
+    text-align: left;
+    background: #FFFFFF;
+    border:1px solid #AEAEAD;
+    background: url('images/lang_arrow_down.jpg') right 1px no-repeat;
+}
+.ele-lang-title{
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    padding-right: 15px;
+    text-indent: 5px;
+    color: #000;
+}
+    /* use flag and select */
+    .ele-lang-title{
+        height: 32px;
+        margin-top: 5px;
+    }
+    .ele-lang-wrap,
+    .ele-lang-group{width: 54px;}
+</style>
+            <div id="main-Menual">
+                <ul class="topNav">
+                    <li class="current">
+                    <a href="/" class="this">首页</a></li>
+                    <li>
+                    <a href="download.html" >游戏下载</a></li>
+                    <li>
+                    <a href="yxjs_list.html">游戏介绍</a></li>
+                    <li><a href="zhuce.html">帐号注册</a></li>
+                    <li>
+                    <a href="guanli.html">用户管理</a></li>
+                    <li>
+                    <a href="news_list.html">新闻中心</a>
+                    </li>
+                    <li style="background:none;">
+                    <a href="contactus.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner-wrap MemberExclusiveII">
+        <div class="banner-title pngclass"></div>
+    </div>
+    </div>
+<div id="page-container">
+    <div class="MemberExclusiveII content-area clearfix" id="page-body">
+        <!--    main   -->
+<div class="exclusive-event" id="direction">
+     
+<div style="width:940px;" id="MemberExclusive_area">
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game1.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_1">
+        <a style="background-image: url(images/game1.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game2.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_2">
+        <a style="background-image: url(images/game2.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game3.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_3">
+        <a style="background-image: url(images/game3.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game4.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_4">
+        <a style="background-image: url(images/game4.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game5.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_5">
+        <a style="background-image: url(images/game5.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game6.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_6">
+        <a style="background-image: url(images/game6.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game7.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_7">
+        <a style="background-image: url(images/game7.png); width: 940px; height: 160px; opacity: 0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game8.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_8">
+        <a style="background-image: url(images/game8.png); width: 940px; height: 160px; opacity:0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game9.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_8">
+        <a style="background-image: url(images/game9.png); width: 940px; height: 160px; opacity:0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game10.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_8">
+        <a style="background-image: url(images/game10.png); width: 940px; height: 160px; opacity:0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game11.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_8">
+        <a style="background-image: url(images/game11.png); width: 940px; height: 160px; opacity:0; display:block;" href="###"></a>
+    </div>
+</div>
+<div data-type="PT1" class="MemberExclusive">
+    <div style="background-image:url(images/game12.png); height:160px; width:940px;" class="memExclusive" id="memExclusive_8">
+        <a style="background-image: url(images/game12.png); width: 940px; height: 160px; opacity:0; display:block;" href="###"></a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix" id="page-footer">
+    <div class="footer-ad-wrap">
+        <div class="footer-ad"><a href="#" id="bblogo"></a></div>
+    </div>
+        <div class="clearfix" id="footer">
+        <!-- 廳主自改 -->
+        <div id="ArticleList" class="link-warp-sytle">
+            <a href="#">首页</a>&nbsp;|&nbsp;<a href="#">游戏下载</a>&nbsp;|&nbsp;<a href="#">游戏介绍</a>&nbsp;|&nbsp;<a href="#">帐号注册</a>
+            &nbsp;|&nbsp;<a href="#">用户管理</a>&nbsp;|&nbsp;<a href="#">新闻中心</a>&nbsp;|&nbsp;<a href="#" target="_blank">联系我们</a>
+                        <div id="FooterCopyright" class="link-warp-sytle">
+                <p>
+                    Copyright &copy; 世纪棋牌 Reserved &nbsp;&nbsp;24小时联系电话&nbsp;+63-99-8288-8888&nbsp;&nbsp;4006-931-368&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

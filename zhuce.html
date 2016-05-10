@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<link href="css/standard.css" type="text/css" rel="stylesheet" />
+<link href="css/airforceone.css" type="text/css" rel="stylesheet"/>
+<link href="css/form.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<style type="text/css">
+body{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    background:url(images/body_bg.jpg) repeat-x #0099DD;
+}
+.zh-cn body{font-family: STHeiti,"Microsoft YaHei", "微软雅黑", "SimSun", "宋体",arial;}
+.zh-tw body{font-family: "Microsoft JhengHei","微軟正黑體",arial,helvetica,sans-serif;}
+#mainBody{
+    min-width: 1020px;
+    background: url('images/bg01.jpg') #E7F2F4 top center repeat-x;
+}
+.first #mainBody{background: url('images/bg01.jpg') #FFF top center repeat-x;}
+#page-container{background: url('images/container_bg.jpg') center -100px no-repeat;}
+
+/* header */
+.login_BTN{background:url('images/btn_login.png') no-repeat;}
+.login-joinus a{background-image:url('images/btn_joinus.png');}
+/*footer*/
+.footer-ad{background-image:url('images/footer_img.png');}
+/* banner-title */
+.banner-title{background-image:url('images/title_madvertis.png');}
+.MemberExclusiveII .banner-title{background-image:url('images/title_memberexclusiveii.png');}
+.ltlottery .banner-title{background-image:url('images/title_lottery.png');}
+.ttlivetop .banner-title,
+.ttlive .banner-title,
+.lblive .banner-title,
+.yslive .banner-title {
+    background-image:url('images/title_live.png');
+}
+.btn-download,
+.btn-download span{background-image: url('images/btn_download.png');}
+.btn-service,
+.btn-service span{background-image: url('images/btn_service.png');}
+.btn-event,
+.btn-event span{background-image: url('images/btn_events.png');}
+/* GameIcon */
+.GameIcon-First {background: url('images/First_zh-cn.png') left top no-repeat;}
+</style>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/swf.js" ></script>
+<!--[if IE 6]>
+<style type="text/css">
+	html { overflow-x: hidden; }
+</style>
+<script type="text/javascript" src="js/iepng.js"></script>
+<script type="text/javascript">
+	EvPNG.fix('div, ul, img, li, input, a');
+</script>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.9a-min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        DD_belatedPNG.fix(".pngclass");
+    });
+	//修正ie6 bug
+	try {
+		document.execCommand("BackgroundImageCache", false, true);
+	} catch(err) {}
+</script>
+<![endif]-->
+<!-- revised -->
+<script type="text/javascript">
+//<![CDATA[
+
+    //Global variable for calculating page generation time
+    var PageInitTime = new Date();
+    var GameType = '';
+
+    //]]>
+</script>
+</head>
+<body>
+<div id="ele-lang-group" class="ele-lang-group">
+                <a href="#" target="mem_index" class="ele-lang-option ele-lang-zh-tw ">
+                </a>
+                <a href="#" target="mem_index" class="ele-lang-option ele-lang-zh-cn ele-lang-current">
+                </a>
+                <a href="#" target="mem_index" class="ele-lang-option ele-lang-en ">
+                </a>
+                <style>
+            .ele-lang-group{
+                width:80px;
+                display: none;
+                position: absolute;
+                z-index: 100;
+                font-size: 12px;
+                border-radius: 0 0 5px 5px;
+                background-color: #FFFFFF;
+                border-right:1px solid #AEAEAD;
+                border-left:1px solid #AEAEAD;
+                border-bottom:1px solid #AEAEAD;
+            }
+            .ele-lang-group a{
+                height:22px;
+                line-height: 22px;
+                display: block;
+                text-indent: 5px;
+                text-decoration: none;
+                color: #000;
+            }
+            
+
+                        .ele-lang-wrap,
+            .ele-lang-group{width: 54px; border-top:1px solid #AEAEAD;}
+            .ele-lang-option{
+                padding-left:20px;
+                vertical-align: top;
+                background: url('images/lang_circle.png') 50% 2px no-repeat;
+                display: inline-block; *display: inline; *zoom: 1;
+            }
+            .ele-lang-zh-cn { background-position: 50% -38px; }
+            .ele-lang-en    { background-position: 50% -78px; }
+            .ele-lang-ja    { background-position: 50% -118px; }
+            .ele-lang-km    { background-position: 50% -158px; }
+            .ele-lang-vi    { background-position: 50% -198px; }
+            .ele-lang-th    { background-position: 50% -238px; }
+                        .ele-lang-current,
+            .ele-lang-group a:hover{
+                color: #000;
+                background-color: #EFEFEF;
+            }
+        </style>
+</div>
+    <div id="mainBody">
+            <div id="page-header">
+    <div id="header" class="clearfix">
+        <div class="header-logo floatL">
+                                                                        
+        
+<div id="ele-logo-wrap">
+    <object width="210" height="110" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0">
+        <param value="images/logo.swf" name="movie" />
+        <param value="high" name="quality" />
+        <param name="wmode" value="transparent" />
+        <embed src="images/logo.swf" width="210" height="110" type="application/x-shockwave-flash" pluginspage="/www.macromedia.com/go/getflashplayer" quality="high" wmode="transparent">
+    </object>
+</div>
+
+<style>
+    #ele-logo-wrap{
+        width: 210px;
+        height: 110px;
+        display: block;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+</script>        </div>
+        <div id="header-top" class="floatL">
+            <div id="top-link-wrap">
+                <ul class="top-link link-warp-sytle">
+                    <div class="estDIV"></div>
+                    <li>
+                        <a href="#" onclick="setfirst('http://www.5imoban.net');">设为首页</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="bookmarksite('http://www.5imoban.net', '世纪棋牌');">加入最爱</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="login-title-wrap" class="clearfix">
+                <!--login box-->
+                <div id="login-area" class="floatL isLogin-N"> 
+                <form name="LoginForm" id="LoginForm" action="#" method="POST"  target="mem_index" onsubmit="return inputCheck();">
+                    <input type="hidden" name="uid2" value="guest" />
+                    <input type="hidden" name="SS" value="" />
+                    <input type="hidden" name="SR" value="" />
+                    <input type="hidden" name="TS" value="" />
+                    <div class="LoginInfo">
+                    <div class="LoginInfoL floatL clearfix">
+                    <div class="login_ip">
+                    <input name="username" type="text" id="username" class="login-input" value="用户名" onblur="if (this.value =='') this.value='用户名'" onfocus="this.value=''" onclick="if (this.value=='用户名') this.value=''" />
+                    </div>
+                    <div class="login_ip">
+                    <input name="passwd" type="password" id="passwd" class="login-input" value="mima" onblur="if (this.value =='') this.value='mima'" onfocus="this.value=''" onclick="if (this.value=='mima') this.value=''" />
+                    </div>
+                    <div class="login_ip rmNum_area">
+                    <input name="rmNum" type="text" id="rmNum" class="login-input" value="验证码" onblur="if (this.value =='') this.value='验证码'" onfocus="this.value=''" onclick="if (this.value=='验证码') this.value=''" />
+                    <img id='vPic' src="images/transparentNo.gif" width="40" height="18" />
+                    </div>
+                    <input name="Submit" type="submit" value="" class="btnLogin login_BTN pngclass" onmouseover="mover(this);" onmouseout="mout(this);"/>
+                    </div>
+                    <div class="login_BTN_div floatL clearfix">
+                    <div class="login-joinus floatL"><a href="#"></a></div>
+                    </div>
+                    </div>
+                  </form>
+              </div>
+</div>
+<style>
+.ele-lang-wrap{
+    line-height: 20px;
+    width:80px;
+    position: relative;
+    top: 1px;
+    z-index: 10;
+    text-align: left;
+    background: #FFFFFF;
+    border:1px solid #AEAEAD;
+    background: url('images/lang_arrow_down.jpg') right 1px no-repeat;
+}
+.ele-lang-title{
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    padding-right: 15px;
+    text-indent: 5px;
+    color: #000;
+}
+    /* use flag and select */
+    .ele-lang-title{
+        height: 32px;
+        margin-top: 5px;
+    }
+    .ele-lang-wrap,
+    .ele-lang-group{width: 54px;}
+</style>
+			<div id="main-Menual">
+                <ul class="topNav">
+                    <li class="current">
+                    <a href="/" class="this">首页</a></li>
+                    <li>
+                    <a href="download.html" >游戏下载</a></li>
+                    <li>
+                    <a href="yxjs_list.html">游戏介绍</a></li>
+                    <li><a href="zhuce.html">帐号注册</a></li>
+                    <li>
+                    <a href="guanli.html">用户管理</a></li>
+                    <li>
+                    <a href="news_list.html">新闻中心</a>
+                    </li>
+                    <li style="background:none;">
+                    <a href="contactus.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            <div class="banner-wrap AT1">
+            <div class="banner-title pngclass"></div>
+        </div>
+    </div>
+    <div id="page-container">
+    <div id="page-body" class="AT1 content-area clearfix">
+        <!--    main   -->
+                    <div id="page-left">
+    <div class="gameMenuHeader pngclass"></div>
+    <div class="gameMenuBody pngclass">
+        <ul id="mem-menual" class="Game-Menual">
+            <li><a href="#" target="mem_index"><span>抢地主</span></a></li>
+            <li><a href="#" target="mem_index"><span>扎金花</span></a></li>
+            <li><a href="#" target="mem_index"><span>牛牛</span></a></li>
+            <li><a href="#" target="mem_index"><span>梭哈</span></a></li>
+            <li><a href="#" target="mem_index"><span>百家乐</span></a></li>
+            <li><a href="#" target="mem_index"><span>德州扑克</span></a></li>
+            <li><a href="#" target="mem_index"><span>李逵劈鱼</span></a></li>
+            <li><a href="#" target="mem_index"><span>21点</span></a></li>
+            <li><a href="#" target="mem_index"><span>牌九</span></a></li>
+            <li><a href="#" target="mem_index"><span>轮盘</span></a></li>
+            <li><a href="#" target="mem_index"><span>奔驰宝马</span></a></li>
+            <li><a href="#" target="mem_index"><span>翻牌机</span></a></li>
+        </ul>
+    </div>
+    <div class="game-menu-btn btn-service hover-pic pngclass">
+        <a href="#"><span class="pngclass"></span></a>
+    </div>
+    <div class="game-menu-btn btn-download hover-pic pngclass">
+        <a href="#"><span class="pngclass"></span></a>
+    </div>
+    <div class="game-menu-btn btn-event hover-pic pngclass">
+        <a href="#"><span class="pngclass"></span></a>
+    </div>
+    <div class="gameMenuFooter pngclass"></div>
+</div>
+<div id="page-right">
+
+<!--内容区 开始-->
+
+
+<div id="memCash_body">
+    <div class="JM_content JM_content_t"><div id="joinmem"><div><p>
+	<strong>免费注册最高可享有天天返水<span style="color:#ff0000;">1.3%</span>，存取款<span style="color:#ff0000;">5分钟</span>到账，波音老牌，信誉保障！</strong></p>
+</div></div></div>    <form class="JoinMemForm" id="myFORM" name="myFORM" method="post" target="_self" novalidate="novalidate">
+        <input type="hidden" value="add" name="key">
+        <input type="hidden" value="" name="SS">
+        <input type="hidden" value="" name="SR">
+        <input type="hidden" value="" name="TS">
+        <!--會員資料-->
+        <fieldset>
+        <legend>注册帐号</legend>    
+            <p style="position:relative;height:1px;"><a style="position:absolute;top:0px;"></a></p>
+            <!-- 介紹人 -->
+                        <p>
+             <label>介绍人：</label>
+             <input type="text" maxlength="20" size="15" value="" name="Intr">
+            </p>
+                                    <!-- 帳號 -->
+            <p>
+                <label><span class="star">*&nbsp;</span>帐 号：</label>
+                <input type="text" maxlength="12" size="15" value="" id="username" name="username">
+                <img width="16" height="16" class="loading_pic" id="loading_username" alt="loading" src="/cl/tpl/commonFile/images/ajax-loader.gif">
+            </p>
+            <p class="memCash_text">帐号：请输入4-12个字元, 仅可输入英文字母以及数字的组合!!</p>
+                      <!-- 密碼 -->
+             <p>
+                <label><span class="star">*&nbsp;</span>密 码：</label>
+                <input type="password" maxlength="12" size="15" class="password_adv" value="" id="password" name="password">
+             </p>
+              <p class="memCash_text">*密码规则：须为<font color="red"><b>6~12码英文或数字</b></font>且符合0~9或a~z字元</p>
+           <!-- 確認密碼 -->
+               <p>
+                 <label><span class="star">*&nbsp;</span>确认密码：</label>
+                 <input type="password" maxlength="12" size="15" value="" id="passwd" name="passwd">
+               </p>
+                                               <!-- 貨幣 -->
+            <p>
+                <label><span class="star">*&nbsp;</span>货币：</label>
+                 <select name="currency">
+                    <option selected="selected" value="RMB" label="RMB">RMB</option>
+
+                 </select>
+            </p>
+                                            </fieldset>
+        <!--次要資料-->
+        <fieldset>
+        <legend>会员资料</legend>     
+            <p style="position:relative;height:1px;"><a style="position:absolute;top:0px;"></a></p>
+                        <!-- 真實姓名 -->
+            <p>
+                <label><span class="star">*&nbsp;</span>真实姓名：</label>
+                <input type="text" maxlength="30" size="15" value="" id="real_name" name="real_name">
+                <img width="16" height="16" class="loading_pic" id="loading_name" alt="loading" src="/cl/tpl/commonFile/images/ajax-loader.gif">
+            </p>
+            <p style="color:red;" class="memCash_text">必须与您的银行帐户名称相同，否则不能出款!</p>
+                                                                                                <!-- 手機 -->
+            <p>
+                <label><span class="star">*&nbsp;</span>手机：</label>
+                <input type="text" maxlength="11" size="15" value="" id="tel" name="tel">
+                <img width="16" height="16" class="loading_pic" id="loading_tel" alt="loading" src="/cl/tpl/commonFile/images/ajax-loader.gif">
+            </p>
+                                                <!-- 取款密碼 -->
+            <p>
+                <label><span class="star">*&nbsp;</span>取款密码：</label>
+                <select name="pwd1" class="valid">
+                    <option selected="selected" value="-" label="-">-</option>
+                    <option value="0" label="0">0</option>
+                    <option value="1" label="1">1</option>
+                    <option value="2" label="2">2</option>
+                    <option value="3" label="3">3</option>
+                    <option value="4" label="4">4</option>
+                    <option value="5" label="5">5</option>
+                    <option value="6" label="6">6</option>
+                    <option value="7" label="7">7</option>
+                    <option value="8" label="8">8</option>
+                    <option value="9" label="9">9</option>
+                </select>
+                <select name="pwd2" class="valid">
+                    <option selected="selected" value="-" label="-">-</option>
+                    <option value="0" label="0">0</option>
+                    <option value="1" label="1">1</option>
+                    <option value="2" label="2">2</option>
+                    <option value="3" label="3">3</option>
+                    <option value="4" label="4">4</option>
+                    <option value="5" label="5">5</option>
+                    <option value="6" label="6">6</option>
+                    <option value="7" label="7">7</option>
+                    <option value="8" label="8">8</option>
+                    <option value="9" label="9">9</option>
+                </select>
+                <select name="pwd3">
+                    <option selected="selected" value="-" label="-">-</option>
+                    <option value="0" label="0">0</option>
+                    <option value="1" label="1">1</option>
+                    <option value="2" label="2">2</option>
+                    <option value="3" label="3">3</option>
+                    <option value="4" label="4">4</option>
+                    <option value="5" label="5">5</option>
+                    <option value="6" label="6">6</option>
+                    <option value="7" label="7">7</option>
+                    <option value="8" label="8">8</option>
+                    <option value="9" label="9">9</option>
+                </select>
+                <select name="pwd4" class="valid">
+                    <option selected="selected" value="-" label="-">-</option>
+                    <option value="0" label="0">0</option>
+                    <option value="1" label="1">1</option>
+                    <option value="2" label="2">2</option>
+                    <option value="3" label="3">3</option>
+                    <option value="4" label="4">4</option>
+                    <option value="5" label="5">5</option>
+                    <option value="6" label="6">6</option>
+                    <option value="7" label="7">7</option>
+                    <option value="8" label="8">8</option>
+                    <option value="9" label="9">9</option>
+                </select>
+                <input type="text" size="0" id="HiddenInput" value="4" name="MultiPwd">
+            </p>
+            <p class="memCash_text">提款认证必须，请务必记住!</p>
+                                    <!-- QQ -->
+            <p>
+                <label><span class="star">*&nbsp;</span>QQ：</label>
+                <input type="text" maxlength="16" size="15" value="" name="qq_num">
+            </p>
+             
+                                    <!-- 郵箱 -->
+            <p>
+                <label><span class="star">*</span>&nbsp;邮箱：</label>
+                <input type="text" maxlength="50" size="15" value="" id="email" name="email">
+                <img width="16" height="16" class="loading_pic" id="loading_email" alt="loading" src="images/ajax-loader.gif">
+            </p>
+            <div class="memCash_text"></div>
+                    </fieldset>
+        <!-- 同意條約 -->
+                <p style="padding-left: 20px;" id="memCash-agree"><input type="checkbox" style="height:13px;" value="Y" id="check1" name="agree">我已届满合法博彩年龄﹐且同意各项开户条约。<a id="AGREEMENT" href="javascript:void(0);">"开户协议"</a></p>
+                <br>
+        <!-- 確認/重設 -->
+        <div align="center" id="memCash-confirm">
+            <input type="submit" value="确认" class="joinform_submit" id="OK2" name="OK2">
+            <input type="reset" value="重设" class="joinform_cancel" id="CANCEL2" name="CANCEL2">
+        </div>
+        <!-- 備註 -->
+                                    <div align="left" id="memCash-remark">
+                备注：
+                <ul>
+                    <li>1.标记有&nbsp;<span class="star">*</span>&nbsp;者为必填项目。</li>
+                    <li>2.手机与取款密码为取款金额时的凭证,请会员务必填写详细资料。</li>
+                    <li>3.若公司有其它活动会E-MAIL通知，请客户填写清楚。</li>
+                </ul>
+                </div>
+                        </form>
+    <!--  -->
+    <div style="display:none" id="Dialog"></div>
+
+</div>
+
+
+<!--内容区域 结束-->
+
+   </div>
+</div>
+
+<div id="page-footer" class="clearfix">
+    <div class="footer-ad-wrap">
+        <div class="footer-ad"><a id="bblogo" href="http://www.bb-in.com/" target="_blank"></a></div>
+    </div>
+        <div id="footer" class="clearfix">
+        <!-- 廳主自改 -->
+        <div id="ArticleList" class="link-warp-sytle">
+            <a href="#">首页</a>&nbsp;|&nbsp;<a href="#">游戏下载</a>&nbsp;|&nbsp;<a href="#">游戏介绍</a>&nbsp;|&nbsp;<a href="#">帐号注册</a>
+            &nbsp;|&nbsp;<a href="#">用户管理</a>&nbsp;|&nbsp;<a href="#">新闻中心</a>&nbsp;|&nbsp;<a href="#" target="_blank">联系我们</a>
+                        <div id="FooterCopyright" class="link-warp-sytle">
+                <p>
+                    Copyright &copy; 世纪棋牌 Reserved &nbsp;&nbsp;24小时联系电话&nbsp;+63-99-8288-8888&nbsp;&nbsp;4006-931-368&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
